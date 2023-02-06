@@ -6,7 +6,302 @@
   padding: 0;
 }
 
+html {
+  min-width: 376px;
+}
+
 body {
   font-family: "Barlow", sans-serif;
-  /* font-family: 'Barlow Condensed', sans-serif; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 376px;
+}
+
+main {
+  width: 376px;
+  overflow: hidden;
+  position: relative;
+}
+
+.background-pattern {
+  background: hsl(207, 33%, 95%);
+  height: 500px;
+  width: 500px;
+  border-radius: 3.6rem;
+  position: absolute;
+  left: 50%;
+  top: -10.5%;
+  z-index: -1;
+}
+
+.modal {
+  background: #fff;
+  width: 83%;
+  height: 235px;
+  text-align: center;
+  padding: 1.5rem;
+  position: absolute;
+  top: 12%;
+  left: 8.5%;
+  z-index: 2;
+  box-shadow: -2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.mobile-nav {
+  height: 100%;
+}
+
+.mobile-nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-nav li {
+  color: hsl(230, 29%, 20%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06rem;
+  cursor: pointer;
+}
+
+.mobile-nav ul :last-child {
+  color: hsl(231, 7%, 65%);
+}
+
+.mobile-nav hr {
+  color: hsl(231, 7%, 65%);
+  height: 1px;
+  width: 100%;
+}
+
+.close-icon {
+  display: none;
+}
+
+header {
+  height: 5.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 1.85rem;
+}
+
+.logo-container {
+  height: 24px;
+  width: 24px;
+}
+
+.logo-container img {
+  width: 100%;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.illustration {
+  height: 244px;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 5.4rem;
+}
+
+.illustration-img {
+  transform: translateX(10px);
+  height: 100%;
+}
+
+.left {
+  padding: 0 2rem;
+  margin-bottom: 4.5rem;
+}
+
+.left-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.new-badge {
+  background: hsl(230, 29%, 20%);
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1.5rem;
+  width: 3rem;
+  border-radius: 1rem;
+  padding-bottom: 2px;
+  margin-right: 1rem;
+}
+
+.left-top :nth-child(2) {
+  color: hsl(231, 7%, 65%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.28rem;
+}
+
+h1 {
+  color: hsl(230, 29%, 20%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.left p {
+  color: hsl(230, 11%, 40%);
+  font-size: 1.15rem;
+  line-height: 1.6rem;
+  margin-bottom: 1.7rem;
+}
+
+button {
+  background: hsl(0, 100%, 68%);
+  color: #fff;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 0.86rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  width: 9.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  outline: none;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.left-bottom :nth-child(2) {
+  color: hsl(231, 7%, 65%);
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-left: 1rem;
+}
+
+@media (hover: hover) {
+  button:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    align-items: flex-start;
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .background-pattern {
+    background: hsl(207, 33%, 95%);
+    height: 600px;
+    width: 800px;
+    border-radius: 3.6rem;
+    position: absolute;
+    left: 46.7%;
+    top: -28%;
+    z-index: -1;
+  }
+  header {
+    padding: 0 11.5rem 0 4rem;
+    margin-bottom: 5.5rem;
+  }
+  .logo-container {
+    height: 32px;
+    width: 32px;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  .desktop-nav {
+    display: block;
+    width: 375px;
+  }
+  .desktop-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-nav li {
+    color: hsl(230, 29%, 20%);
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    cursor: pointer;
+  }
+  .desktop-nav li:hover {
+    text-decoration: underline;
+  }
+  .desktop-nav ul :last-child {
+    color: hsl(231, 7%, 65%);
+    padding-left: 0.4rem;
+  }
+  .desktop-nav ul span {
+    color: hsl(231, 7%, 65%);
+  }
+  .desktop-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 7rem;
+  }
+  .illustration {
+    height: 100%;
+    width: 55%;
+    margin: 0;
+  }
+  .illustration-img {
+    transform: translateX(35px);
+  }
+  .left {
+    margin: 0;
+    padding: 3rem 0 0 4rem;
+  }
+  h1 {
+    font-size: 4rem;
+    line-height: 4.1rem;
+    width: 480px;
+    margin-bottom: 2rem;
+  }
+  .left p {
+    margin-bottom: 4rem;
+  }
+  button {
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    width: 11.6rem;
+    height: 3rem;
+    padding-top: 2px;
+  }
+  .left-bottom :nth-child(2) {
+    font-size: 1rem;
+    letter-spacing: 0.28rem;
+    margin-left: 1.3rem;
+  }
 }
