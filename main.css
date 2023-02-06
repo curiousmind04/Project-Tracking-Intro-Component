@@ -7,7 +7,7 @@
 }
 
 html {
-  min-width: 376px;
+  min-width: 23.5rem;
 }
 
 body {
@@ -16,19 +16,19 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  min-width: 376px;
+  min-width: 23.5rem;
 }
 
 main {
-  width: 376px;
+  width: 23.5rem;
   overflow: hidden;
   position: relative;
 }
 
 .background-pattern {
   background: hsl(207, 33%, 95%);
-  height: 500px;
-  width: 500px;
+  height: 31.25rem;
+  width: 31.25rem;
   border-radius: 3.6rem;
   position: absolute;
   left: 50%;
@@ -39,7 +39,7 @@ main {
 .modal {
   background: #fff;
   width: 83%;
-  height: 235px;
+  height: 14.6875rem;
   text-align: center;
   padding: 1.5rem;
   position: absolute;
@@ -110,7 +110,7 @@ header {
 }
 
 .illustration {
-  height: 244px;
+  height: 15.25rem;
   width: 100%;
   overflow: hidden;
   margin-bottom: 5.4rem;
@@ -206,26 +206,27 @@ button {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 71.5rem) {
   body {
     align-items: flex-start;
   }
   main {
     width: 100%;
     height: 100%;
+    max-width: 90rem;
   }
   .background-pattern {
     background: hsl(207, 33%, 95%);
-    height: 600px;
-    width: 800px;
+    height: 37.5rem;
+    width: 50rem;
     border-radius: 3.6rem;
     position: absolute;
-    left: 46.7%;
+    left: 51%;
     top: -28%;
     z-index: -1;
   }
   header {
-    padding: 0 11.5rem 0 4rem;
+    padding: 0 10rem 0 8rem;
     margin-bottom: 5.5rem;
   }
   .logo-container {
@@ -233,11 +234,17 @@ button {
     width: 32px;
   }
   .hamburger-icon {
-    display: none;
+    display: none !important;
+  }
+  .modal {
+    display: none !important;
+  }
+  .close-icon {
+    display: none !important;
   }
   .desktop-nav {
     display: block;
-    width: 375px;
+    width: 23.4375rem;
   }
   .desktop-nav ul {
     list-style: none;
@@ -277,16 +284,16 @@ button {
     margin: 0;
   }
   .illustration-img {
-    transform: translateX(35px);
+    transform: translateX(100px);
   }
   .left {
     margin: 0;
-    padding: 3rem 0 0 4rem;
+    padding: 3rem 0 0 8rem;
   }
   h1 {
     font-size: 4rem;
     line-height: 4.1rem;
-    width: 480px;
+    width: 30rem;
     margin-bottom: 2rem;
   }
   .left p {
