@@ -227,7 +227,8 @@ button {
   }
   header {
     padding: 0 10rem 0 8rem;
-    margin-bottom: 5.5rem;
+    height: 8.4rem;
+    margin-bottom: 2.5rem;
   }
   .logo-container {
     height: 32px;
