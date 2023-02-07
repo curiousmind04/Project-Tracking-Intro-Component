@@ -77,7 +77,7 @@ main {
   color: hsl(231, 7%, 65%);
 }
 
-.mobile-nav hr {
+.mobile-nav ul :nth-child(4) {
   color: hsl(231, 7%, 65%);
   height: 1px;
   width: 100%;
@@ -267,9 +267,6 @@ button {
   .desktop-nav ul :last-child {
     color: hsl(231, 7%, 65%);
     padding-left: 0.4rem;
-  }
-  .desktop-nav ul span {
-    color: hsl(231, 7%, 65%);
   }
   .desktop-container {
     display: flex;
